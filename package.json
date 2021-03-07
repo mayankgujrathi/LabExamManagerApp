@@ -1,0 +1,35 @@
+{
+  "name": "electron-app",
+  "productName": "Lab Task Manager",
+  "version": "1.0.0",
+  "description": "App for Managing Tasks conducted in a Lab environment",
+  "main": "main.js",
+  "scripts": {
+    "app": "electron .",
+    "cbuild": "electron-builder"
+  },
+  "build": {
+    "appId": "electron-app",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "Lab Task Manager",
+      "license": "license.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.1.0",
+    "electron-builder": "^22.9.1"
+  }
+}
